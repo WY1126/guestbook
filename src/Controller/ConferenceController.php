@@ -16,7 +16,7 @@ class ConferenceController extends AbstractController
     {
         $greet = '';
         if($name) { 
-            $greet = sprintf('<h1> %u Hello %s!</h1>',1,htmlspecialchars($name)); //sprintf()把百分号（%）符号替换成一个作为参数进行传递的变量。
+            $greet = sprintf('<h1> %u Hello %s!</h1>',100,htmlspecialchars($name)); //sprintf()把百分号（%）符号替换成一个作为参数进行传递的变量。
         }
         return new Response(<<<EOF
         <html>
